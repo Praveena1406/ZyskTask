@@ -1,0 +1,103 @@
+/* General container styling */
+.features-section {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #f4f4f4; /* Light gray background */
+    color: #333;
+  }
+  
+  /* Heading styles */
+  .features-heading {
+    max-width: 800px;
+    margin: 0 auto 40px;
+  }
+  
+  .features-subtitle {
+    color: #e63946; /* Slightly darker red */
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  
+  .features-title {
+    font-size: 30px; /* Slightly larger title */
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #222; /* Darker title color */
+  }
+  
+  .features-description {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555; /* Slightly darker gray */
+  }
+  
+  /* Grid container */
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px; /* Increased gap between grid items */
+  }
+  
+  .feature-item {
+    background: #ffffff; /* Pure white background */
+    padding: 25px; /* Increased padding */
+    border-radius: 10px; /* Slightly more rounded corners */
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1); /* Slightly deeper shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .feature-item:hover {
+    transform: translateY(-8px); /* Increased hover lift */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Deeper shadow on hover */
+  }
+  
+  /* Feature icon */
+  .feature-icon {
+    font-size: 42px; /* Slightly larger icon */
+    color: #e63946;
+    margin-bottom: 15px;
+  }
+  
+  /* Feature title */
+  .feature-title {
+    font-size: 20px; /* Slightly larger title font */
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #333; /* Darker text color */
+  }
+  
+  /* Feature description */
+  .feature-description {
+    font-size: 15px; /* Slightly larger description font */
+    color: #666; /* Darker gray */
+    line-height: 1.6;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 1024px) {
+    .features-grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px; /* Adjusted gap for smaller screens */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .features-title {
+      font-size: 26px; /* Larger title font for smaller screens */
+    }
+  
+    .features-description {
+      font-size: 14px;
+    }
+  
+    .features-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .feature-item {
+      padding: 20px;
+    }
+  }
+  
